@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="PT-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokedex - Modulo 2</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Pokedex</h1>
+        <nav>
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">CADASTRO</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="container">
+            <% poke.forEach((poke)=> {%>
+                <div class="containerDois">
+                    <img src="<%= poke.imagem %>" alt="">
+                    <div class="text">
+                        <h2>
+                            <%= poke.nome %>
+                        </h2>
+                        <p>
+                            <%= poke.descricao %>
+                        </p>
+                        <p>Tipo:<%= poke.tipo %>
+                        </p>
+                    </div>
+                </div>
+                <% }) %>
+        </section>
+        <section id="cadastro">
+            <h2>Cadastro</h2>
+            <form action="/add" method="post">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+
+                <label for="descricao">Descrição:</label>
+                <input type="text" id="descricao" name="descricao" required>
+
+                <label for="tipo">Tipo:</label>
+                <input type="text" id="tipo" name="tipo" required>
+
+                <label for="imagem">Endereço da imagem:</label>
+                <input type="text" id="imagem" name="imagem" required>
+
+                <button id="btn" type="submit">Cadastrar</button>
+            </form>
+        </section>
+    </main>
+</body>
+
+</html>

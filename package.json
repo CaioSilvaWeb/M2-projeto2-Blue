@@ -1,0 +1,27 @@
+{
+  "name": "m2-projeto2-blue",
+  "version": "1.0.0",
+  "description": "Projeto 2 M2 Pokedex",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CaioSilvaWeb/M2-projeto2-Blue.git"
+  },
+  "author": "Caio Silva",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CaioSilvaWeb/M2-projeto2-Blue/issues"
+  },
+  "homepage": "https://github.com/CaioSilvaWeb/M2-projeto2-Blue#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.16"
+  },
+  "dependencies": {
+    "ejs": "^3.1.8",
+    "express": "^4.18.1"
+  }
+}
