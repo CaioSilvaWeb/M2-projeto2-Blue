@@ -12,10 +12,9 @@ body {
     #33171d,
     #000000
   );
-  
 }
-*{
-    scroll-behavior: smooth;
+* {
+  scroll-behavior: smooth;
 }
 nav {
   position: fixed;
@@ -119,30 +118,8 @@ section#cards div.card a#editar {
   font-weight: bolder;
 }
 
-section#cards div.card a#apagar {
-  padding: 0.6rem;
-  display: flex;
-  justify-content: center;
-  margin: 0 auto;
-  font-size: 1rem;
-  background-color: #fff;
-  color: chocolate;
-  cursor: pointer;
-  transition: all 0.3s ease-in-out;
-  text-decoration: none;
-  margin-top: 1rem;
-  border: navajowhite;
-  border-radius: 20px;
-  font-weight: bolder;
-}
-
 section#cards div.card a#editar:hover {
   background-color: #0077ff;
-  color: #fff;
-}
-
-section#cards div.card a#apagar:hover {
-  background-color: chocolate;
   color: #fff;
 }
 

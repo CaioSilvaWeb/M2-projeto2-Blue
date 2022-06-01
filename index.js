@@ -33,15 +33,7 @@ const pokedex = [
       "When it retracts its long neck into its shell, it squirts out water with vigorous force.",
     tipo: "Water",
     imagem: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/007.png",
-  },
-  {
-    id: 4,
-    nome: "Pikachu",
-    descricao:
-      "Pikachu that can generate powerful electricity have cheek sacs that are extra soft and super stretchy.",
-    tipo: "Eletric",
-    imagem: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/025.png",
-  },
+  }
 ];
 
 let pokemon = undefined;
@@ -70,12 +62,6 @@ app.post("/update/:id", (req, res) => {
   newPokemon.id = id + 1;
   pokedex[id] = newPokemon;
   pokemon = undefined;
-  res.redirect("/#cards");
-});
-
-app.get("/delete/:id", (req, res) => {
-  const id = +req.params.id - 1;
-  delete pokedex[id];
   res.redirect("/#cards");
 });
 
